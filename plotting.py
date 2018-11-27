@@ -37,3 +37,21 @@ def fanchart(y, forecast, intv1, intv2, intv3):
         ax.fill_betweenx(ax.get_ylim(), extended.index[0], extended.index[-1], facecolor='grey', alpha=0.15)
         ax.set_ylim(hold)
     return fig, ax
+
+def histogram(series):
+    fig, ax= plt.subplots(figsize=(8,5))
+    sns.distplot(series, ax=ax, hist_kws={'alpha': 0.8, 'edgecolor':'black', 'color': '#1F77B4'},  
+                 kde_kws={'color': 'black', 'alpha': 0.7})
+    sns.despine()
+    return fig, ax
+
+def qq_plot(residuals):
+    fig, ax = plt.subplots(figsize=(8,5))
+    pp = sm.ProbPlot(residuals, fit=True)
+    qq = pp.qqplot(color='#1F77B4', alpha=0.8, ax=ax)
+    a=ax.get_xlim()[0]
+    b=ax.get_xlim()[1]
+    ax.plot([a,b],[a,b], color='black', alpha=0.6)
+    ax.set_xlim(a,b)
+    ax.set_title('Normal Q-Q plot for the residuals', fontsize=12)
+    return fig, ax
