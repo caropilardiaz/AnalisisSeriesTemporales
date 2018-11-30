@@ -6,4 +6,5 @@ __pycache__
 TODO
 lib/
 tmp/
-x13*
+x13results.txt
+.git/
