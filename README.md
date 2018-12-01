@@ -16,7 +16,21 @@ This version: December 2, 2018.
 * [ARIMA](https://github.com/gmiretti/Forecasting/blob/master/Tutorial04%20ARIMA.ipynb)
 * [Seasonal ARIMA](https://github.com/gmiretti/Forecasting/blob/master/Tutorial05%20Seasonal%20ARIMA.ipynb)
 
+## Execution
 
+### Conda
 
+Install requirements using command bellow and then open Jupyter notebook:
 
+    conda install --file conda-requirements.txt
+
+### Docker
+
+Run and then go to https://localhost:8889
+
+    docker run -p 8889:8888 gmiretti/forecasting
+
+To update to latest version execute the command below and run again:
+
+    docker pull gmiretti/forecasting
 
