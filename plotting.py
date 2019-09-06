@@ -1,3 +1,7 @@
+""" Plotting methods for temp series """
+
+__author__ = "Marcel Scharth"
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns

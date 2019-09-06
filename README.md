@@ -26,7 +26,7 @@ Install requirements using command bellow and then open Jupyter notebook:
 
 ### Docker
 
-Run and then go to https://localhost:8889
+Run and then go to http://localhost:8889
 
     docker run -p 8889:8888 gmiretti/forecasting
 
