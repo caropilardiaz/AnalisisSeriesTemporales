@@ -6,7 +6,7 @@ Based in "A short course on forecasting" by Marcel Scharth, The University of Sy
 
 This material draws on the [Forecasting Principles and Practice](https://www.otexts.org/fpp2) textbook by Rob Hyndman and George Athanasopoulos. While the textbook and Rob Hyndman's [DataCamp course](https://www.datacamp.com/courses/forecasting-using-r) use R, our tutorials provide a Python version of related content, but based only in [**statsmodels**](https://www.statsmodels.org) and the [scipy stack](https://www.scipy.org/stackspec.html).
 
-This version: December 2, 2018.
+This version: September 6, 2019.
 
 ## Tutorials (Python)
 
